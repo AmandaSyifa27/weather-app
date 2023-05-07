@@ -1,0 +1,147 @@
+* {
+ font-family: "Dosis", sans-serif;
+}
+
+body {
+ background-image: url("/assets/background.jpg");
+ background-repeat: no-repeat;
+ block-size: cover;
+ transition: background-image 0.5s ease-in;
+}
+
+.input-container {
+ position: relative;
+ margin-bottom: 40px;
+ display: flex;
+ justify-content: center;
+}
+
+.search-input {
+ width: 60%;
+ height: 25px;
+ border-radius: 25px;
+ padding: 5px 0 10px 20px;
+ font-size: 20px;
+ border: 3px dotted pink;
+ color: white;
+ background-color: rgba(255, 255, 255, 0.4);
+}
+.search-button {
+ background: none;
+ margin-left: 25px;
+ border: none;
+}
+.search-button img {
+ width: 45px;
+}
+
+.input-container button {
+ padding: 0;
+ margin-left: 6px;
+}
+
+.clear-button {
+ border: none;
+ background: none;
+
+ cursor: pointer;
+ opacity: 0;
+ transition: opacity 0.2s ease-in-out;
+}
+
+.clear-button img {
+ width: 40px;
+}
+
+.input-container:hover .clear-button {
+ opacity: 1;
+}
+
+.card {
+ display: flex;
+ justify-content: space-evenly;
+ /* background-color: pink; */
+ width: 80%;
+ padding: 20px;
+ border-radius: 25px;
+ color: white;
+ background-image: linear-gradient(
+  to right top,
+  rgba(209, 107, 165, 0.6),
+  rgba(199, 119, 185, 0.6),
+  rgba(186, 131, 202, 0.6),
+  rgba(170, 143, 216, 0.6),
+  rgba(154, 154, 225, 0.6),
+  rgba(138, 167, 236, 0.6),
+  rgba(121, 179, 244, 0.6),
+  rgba(105, 191, 248, 0.6),
+  rgba(82, 207, 254, 0.6),
+  rgba(65, 223, 255, 0.6),
+  rgba(70, 238, 250, 0.6),
+  rgba(95, 251, 241, 0.6)
+ );
+ margin-top: 50px;
+}
+
+.card-content {
+ display: none;
+ flex-direction: column;
+ justify-content: space-between;
+}
+
+.hr {
+ display: none;
+}
+
+.card p {
+ margin: 0;
+ font-size: larger;
+}
+
+.card img {
+ width: 100px;
+}
+
+#city-name {
+ font-size: 30px;
+}
+
+#temperature {
+ font-size: 100px;
+}
+
+#enter-city {
+ font-size: 30px;
+}
+
+/* MOBILE */
+@media screen and (max-width: 760px) {
+ .search-input {
+  width: 70%;
+ }
+
+ .card {
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+ }
+ .card-content {
+  width: fit-content;
+ }
+
+ .hr {
+  display: block;
+  width: 100%;
+ }
+}
+
+/* wider */
+@media screen and (min-width: 1200px) {
+ .search-input {
+  width: 35%;
+ }
+
+ .card {
+  width: 65%;
+ }
+}
