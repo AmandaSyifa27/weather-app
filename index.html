@@ -2,10 +2,11 @@
 <html lang="en">
  <head>
   <meta charset="UTF-8" />
+  <link rel="icon" href="/assets/logo.png" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="main.css" />
-  <title>Document</title>
+  <title>Weather App</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -18,6 +19,12 @@
    rel="stylesheet"
    href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.4/dist/sweetalert2.min.css"
   />
+  <meta name="description" content="Simple Weather Web" />
+  <meta
+   name="keywords"
+   content="weather, now weather, cuaca, cuaca sekarang, weather app, weather web, simple weather web, simple weather app, web cuaca simpel, aplikasi cuaca simpel, cuaca hari ini, today's weather "
+  />
+  <meta name="author" content="Amanda" />
  </head>
  <body>
   <div>
@@ -32,14 +39,14 @@
             "
      />
      <button class="clear-button" onclick="clearInput()">
-      <img src="/assets/clear.png" alt="" />
+      <img src="/assets/icons/clear.png" alt="clear button" />
      </button>
      <button
       class="search-button"
       onclick="getVal()
      "
      >
-      <img src="/assets/search.png" alt="Search" />
+      <img src="/assets/icons/search.png" alt="Search button" />
      </button>
     </div>
     <div style="display: flex; justify-content: center">
@@ -57,7 +64,7 @@
       </div>
       <hr class="hr" />
       <div class="card-content">
-       <img src="/assets/wind.png" alt="wind" />
+       <img src="/assets/icons/wind.png" alt="wind" />
        <p id="wind-speed"></p>
        <p id="wind-gust"></p>
       </div>

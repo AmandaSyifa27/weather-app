@@ -31,35 +31,35 @@ async function fetchData(cityName) {
   const body = document.body;
 
   if (weatherCondition === "Clear") {
-   weatherIcon.src = "/assets/clearSky.png";
-   body.style.backgroundImage = "url(/assets/background/clear.jpg)";
+   weatherIcon.src = "/assets/icons/clearSky.png";
+   body.style.backgroundImage = "url(/assets/backgrounds/clear.jpg)";
   } else if (weatherCondition === "Clouds") {
-   weatherIcon.src = "/assets/clouds.png";
-   body.style.backgroundImage = "url(/assets/background/clouds.jpg)";
+   weatherIcon.src = "/assets/icons/clouds.png";
+   body.style.backgroundImage = "url(/assets/backgrounds/clouds.jpg)";
   } else if (weatherCondition === "Drizzle") {
-   weatherIcon.src = "/assets/drizzle.png";
-   body.style.backgroundImage = "url(/assets/background/drizzle.jpg)";
+   weatherIcon.src = "/assets/icons/drizzle.png";
+   body.style.backgroundImage = "url(/assets/backgrounds/drizzle.jpg)";
   } else if (weatherCondition === "Fog" || weatherCondition === "Mist") {
-   weatherIcon.src = "/assets/fog.png";
-   body.style.backgroundImage = "url(/assets/background/fog.jpg)";
+   weatherIcon.src = "/assets/icons/fog.png";
+   body.style.backgroundImage = "url(/assets/backgrounds/fog.jpg)";
   } else if (weatherCondition === "Rain") {
-   weatherIcon.src = "/assets/rain.png";
-   body.style.backgroundImage = "url(/assets/background/rain.jpg)";
+   weatherIcon.src = "/assets/icons/rain.png";
+   body.style.backgroundImage = "url(/assets/backgrounds/rain.jpg)";
   } else if (weatherCondition === "Sand") {
-   weatherIcon.src = "/assets/sand.png";
-   body.style.backgroundImage = "url(/assets/background/sand.jpg)";
+   weatherIcon.src = "/assets/icons/sand.png";
+   body.style.backgroundImage = "url(/assets/backgrounds/sand.jpg)";
   } else if (weatherCondition === "Snow") {
-   weatherIcon.src = "/assets/snow.png";
-   body.style.backgroundImage = "url(/assets/background/snow.jpg)";
+   weatherIcon.src = "/assets/icons/snow.png";
+   body.style.backgroundImage = "url(/assets/backgrounds/snow.jpg)";
   } else if (weatherCondition === "Thunderstorm") {
-   weatherIcon.src = "/assets/storm.png";
-   body.style.backgroundImage = "url(/assets/background/storm.jpg)";
+   weatherIcon.src = "/assets/icons/storm.png";
+   body.style.backgroundImage = "url(/assets/backgrounds/storm.jpg)";
   } else if (weatherCondition === "Tornado" || weatherCondition === "Squall") {
-   weatherIcon.src = "/assets/tornado.png";
-   body.style.backgroundImage = "url(/assets/background/tornado.jpg)";
+   weatherIcon.src = "/assets/icons/tornado.png";
+   body.style.backgroundImage = "url(/assets/backgrounds/tornado.jpg)";
   } else {
-   weatherIcon.src = "/assets/dust.png";
-   body.style.backgroundImage = "url(/assets/background/dust.jpg)";
+   weatherIcon.src = "/assets/icons/dust.png";
+   body.style.backgroundImage = "url(/assets/backgrounds/dust.jpg)";
   }
 
   document.getElementById("temperature").textContent = `${temperature}\u00B0`;
