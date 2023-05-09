@@ -3,6 +3,7 @@ const apiKey = "0f3c744a7cd168c57dbc0c3636635869";
 function getVal() {
  const val = document.getElementById("input");
  const value = val.value;
+ fetchData(value);
  return value;
 }
 
@@ -18,7 +19,6 @@ async function fetchData(cityName) {
    `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=metric`
   );
   const data = await response.json();
-  console.log(data);
 
   const temperature = data.main.temp;
   const city = data.name;
@@ -81,12 +81,13 @@ async function fetchData(cityName) {
   swal.fire({
    title: "Sorry..",
    text:
-    "You may have entered the city name incorrectly, or it may be a server error.",
+    "You may have entered the city name incorrectly, please check again. Or it may be a server error.",
    imageUrl: "/assets/error.svg",
    imageWidth: 400,
    imageHeight: 200,
    imageAlt: "Custom image",
   });
+  console.log(error);
  }
 }
 
